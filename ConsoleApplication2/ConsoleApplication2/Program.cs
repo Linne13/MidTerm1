@@ -33,7 +33,7 @@ namespace ConsoleApplication2
         {
             foreach(FileSystemInfo fInfo in directory.GetFileSystemInfos)                                                                                       )
             {
-
+                Console.WriteLine(fInfo.name);
             }
         }
 
