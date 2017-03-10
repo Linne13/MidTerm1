@@ -31,7 +31,7 @@ namespace ConsoleApplication2
 
          public void Info(DirectoryInfo directory)
         {
-            foreach(FileSystemInfo in )
+            foreach(FileSystemInfo fInfo in directory.GetFileSystemInfos)                                                                                       )
             {
 
             }
