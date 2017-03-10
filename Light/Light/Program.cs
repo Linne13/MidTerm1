@@ -84,6 +84,7 @@ namespace Light
             Console.WriteLine("\n");
             Print3();
             Console.ReadKey(); */
+            
 
             Thread t = new Thread(new ThreadStart(Print1));
             t.Start();
@@ -96,8 +97,6 @@ namespace Light
             t3.Start();
             Console.ReadKey();*/
 
-          
-            
 
         }
     }
