@@ -1,0 +1,4 @@
+c:\users\a_khan\documents\visual studio 2010\Projects\Light\Light\bin\Debug\Light.exe
+c:\users\a_khan\documents\visual studio 2010\Projects\Light\Light\bin\Debug\Light.pdb
+c:\users\a_khan\documents\visual studio 2010\Projects\Light\Light\obj\x86\Debug\Light.exe
+c:\users\a_khan\documents\visual studio 2010\Projects\Light\Light\obj\x86\Debug\Light.pdb
