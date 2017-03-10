@@ -18,8 +18,9 @@ namespace Light
             Console.WriteLine("****");
             Console.WriteLine("****");
             Console.WriteLine("****");
+            Console.WriteLine("\n");
 
-            Thread.Sleep(300);
+            Thread.Sleep(500);
 
             Console.ForegroundColor = ConsoleColor.Yellow;
 
@@ -27,8 +28,9 @@ namespace Light
             Console.WriteLine("****");
             Console.WriteLine("****");
             Console.WriteLine("****");
+            Console.WriteLine("\n");
 
-            Thread.Sleep(600);
+            Thread.Sleep(500);
 
             Console.ForegroundColor = ConsoleColor.Green;
 
@@ -71,21 +73,25 @@ namespace Light
 
         static void Main(string[] args)
         {
-            Print1();
+            /*Print1();
             Console.WriteLine("\n");
 
-           /*Print2();
+           Print2();
             Console.WriteLine("\n");
             Print3();
             Console.ReadKey(); */
 
-            /*Thread t = new Thread(new ThreadStart(Print1));
+            Thread t = new Thread(new ThreadStart(Print1));
+            t.Start();
+            /*
             Thread t2 = new Thread(new ThreadStart(Print2));
             Thread t3 = new Thread(new ThreadStart(Print3));
             t.Start();
             t2.Start();
             t3.Start();
             Console.ReadKey();*/
+
+          
             
 
         }
