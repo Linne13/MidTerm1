@@ -24,17 +24,20 @@ namespace ConsoleApplication2
             }
         }
 
-        public void getPerimeter(int a, int b)
+        static void getPerimeter(int a, int b)
         {
             int p = 2 * (a + b);
         }
 
-         public void Info(DirectoryInfo directory)
+         static void ShowInfo(DirectoryInfo directory)
         {
             foreach(FileSystemInfo fInfo in directory.GetFileSystemInfos)                                                                                       )
             {
+                
                 Console.WriteLine(fInfo.name);
             }
+
+
         }
 
         static void Main(string[] args)
@@ -42,8 +45,15 @@ namespace ConsoleApplication2
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
 
+            getPerimeter(a, b);
 
+            DirectoryInfo directory = new DirectoryInfo(@"C:\Users\a_khan\Documents\Polygon");
 
+            while (true)
+            {
+                ShowInfo(directory);
+                Console.ReadKey();
+            }
         }
     }
 }
