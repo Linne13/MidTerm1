@@ -10,36 +10,40 @@ namespace Light
     {
         public static void Print1()
         {
-            Thread.Sleep(100);
 
-            Console.ForegroundColor = ConsoleColor.Red;
-  
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("\n");
+            while (true)
+            {
+                Thread.Sleep(100);
 
-            Thread.Sleep(500);
+                Console.ForegroundColor = ConsoleColor.Red;
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("\n");
 
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("\n");
+                Thread.Sleep(500);
 
-            Thread.Sleep(500);
+                Console.ForegroundColor = ConsoleColor.Yellow;
 
-            Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("\n");
 
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
-            Console.WriteLine("****");
+                Thread.Sleep(500);
 
-            Console.ReadKey();
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+                Console.WriteLine("****");
+
+                Console.ReadKey();
+            }
             
         }
 
@@ -83,6 +87,7 @@ namespace Light
 
             Thread t = new Thread(new ThreadStart(Print1));
             t.Start();
+
             /*
             Thread t2 = new Thread(new ThreadStart(Print2));
             Thread t3 = new Thread(new ThreadStart(Print3));
